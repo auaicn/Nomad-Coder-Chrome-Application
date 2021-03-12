@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>메아리</title>
+  <style>
+      #myStyle{color:red;}
+  </style>
+  
+</head>
+<body>
+
+  <button type ="button" onclick="onClickButton()">button</button>
+  <input type ="button" onclick="delayedOnClickButton('s')" value = "delayed button"/>
+  <input type ="button" onclick="intervalOnClickButton('s')" value = "interval button"/>
+  <script>
+    function onClickButton(s){
+      alert(s + " button Clicked");
+    }
+
+    function delayedOnClickButton(s){
+      for (var i=0;i<10;i++)
+        console.log(i);
+      setTimeout(onClickButton,3000);
+    }
+
+    function intervalOnClickButton(s){
+      setInterval(onClickButton,3000);
+    }
+  </script>
+
+  <section id = "myStyle">
+    <h1>안녕! 나는 소마라고해!</h1>
+    <h2>안녕! 나는 소마라고해!</h2>
+  </section>
+  <h3>안녕! 나는 소마라고해!</h3>
+  <h4>안녕! 나는 소마라고해!</h4>
+  <h5>안녕! 나는 소마라고해!</h5>
+  <h6>안녕! 나는 소마라고해!</h6>
+</body>
+</html>
