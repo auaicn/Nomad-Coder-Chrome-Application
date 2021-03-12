@@ -21,11 +21,11 @@ function main()
     intializeConnection();
 
     a.addEventListener("submit", onClickSubmit);
-    a.addEventListener("submit", onClickSubmit);
-    a.addEventListener("submit", onClickSubmit);
-    a.addEventListener("submit", onClickSubmit);
-    a.addEventListener("submit", onClickSubmit);
-    a.addEventListener("submit", onClickSubmit);
+    // a.addEventListener("submit", onClickSubmit);
+    // a.addEventListener("submit", onClickSubmit);
+    // a.addEventListener("submit", onClickSubmit);
+    // a.addEventListener("submit", onClickSubmit);
+    // a.addEventListener("submit", onClickSubmit);
 }
 
 function intializeConnection()
@@ -51,10 +51,14 @@ function update()
     // send
 }
 
-function delete()
+function _delete() // delete is reserved word
 {
     // json
     // send
 }
 
 main();
+
+function whenClick(e) { 
+    alert('클릭3');
+} 

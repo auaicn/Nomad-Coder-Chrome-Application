@@ -3,22 +3,42 @@
     <head>
         <title>헤헷</title>
         <link rel="stylesheet" href="index.css"/>
-        <link href="이미지주소.ico" rel="shortcut icon" type="image/x-icon">
+        <link href="taeng.ico" rel="shortcut icon" type="image/x-icon">
+        <script src="index.js"></script>
         <style>
             /* #custom_id{ background-color: #09C; width: 150px; height: 40px; } */
 	        /* .custom_class{ width: 100px; height: 50px; border: 1px solid green } */
             #forclear{ clear:both;}
+            #html-list{
+                font-size: 30px;
+            }
         </style>
-        <script type="text/javascript"> 
-            function whenClick(e) { 
-                alert('클릭3');
-            } 
-        </script>
     </head>
     
     <body>
 
+        <h2> About SWM </h2>
+        <section id = "html-list" >
+            <a href = "swm/pretest.html" > pretest</a> <br>
+            <a href = "swm/test1.html" > test1</a><br>
+            <a href = "swm/test2.html" > test2</a><br>
+        </section>
         <hr>
+
+        <h2> about drag event </h2>
+        <h4> steps</h4>
+        <ul>
+            <li>draggable object 를 생성한다.</li>
+            <li>asdfa</li>
+            <li>asdfa</li>
+        </ul>
+
+
+
+        <hr>
+
+        <button onclick="printDate()">현재 날짜와 시간 표시하기!</button>
+        <p id="date"></p>
         
         <section id = "layouts">
             <h2>Float Layout 40% on left, 40% on right, text generated with Loren Ipsum</h2>
@@ -31,6 +51,7 @@
 
         <button onclick="whenClick();">hello</button>
         <hr>
+        <h2> About Form </h2>
         <form id="form_style" style="display: inline" >
             date: <input name="abcd" type="date" value="2020-02-23"><br>
             number: <input type="number" placeholder="number you like"><br>
@@ -44,27 +65,11 @@
             <hr>
             <h2> About Tags </h2>
             <dl>
-                <dt> "link"</dt>
+                <dt> "a" with href</dt>
+                    <dd> a 는 anchor, 즉 닻의 의미를 가지고 사용됩니다.</dd>
                     <dd> 현재 문서와 외부 리소스와의 관계를 설정할 때 사용합니다. </dd>
                     <dd> 주로 사이트 아이콘 연결, 스타일 시트 연결에 사용됩니다.</dd>
-                <dt> "a" with href</dt>
-                    <dd> 설명 </dd>
-                    <dd> 설명 </dd>
-                <dt> " " with</dt>
-                    <dd> 설명 </dd>
-                    <dd> 설명 </dd>
-            </dl>
-        </section>
-
-        <section>
-            <hr>
-            <h2> About Tags </h2>
-            <dl>
-                <dt> "link"</dt>
-                    <dd> 현재 문서와 외부 리소스와의 관계를 설정할 때 사용합니다. </dd>
-                    <dd> 주로 사이트 아이콘 연결, 스타일 시트 연결에 사용됩니다.</dd>
-                <dt> "a" with href</dt>
-                    <dd> 설명 </dd>
+                    <dd> href 속성 값으로는, mailto: file: ftp:// #top 등 id 가 올 수 있습니다.</dd>
                     <dd> 설명 </dd>
                 <dt> " " with</dt>
                     <dd> 설명 </dd>
@@ -82,8 +87,16 @@
         <hr>
 
         <section id = "footer">
-        <p>Notion</p>
-        <a href="https://www.instagram.com/auaicn_/">Instagram</a>
+            <p id="logo"></p>
+
+            <img src="img/cafe_jessoo.png" width = "20" height = "20" alt = "fb">
+            <a href="https://www.instagram.com/auaicn_/">Instagram</a> <br>
+        
+            <img src="img/paris.png" width = "20" height = "20" alt = "fb">
+            <a href="https://www.notion.so/HOME-9882fae35f0344ecbb834595e2572414">Notion</a> <br>
+        
+            <img src="img/ponyo.png" width = "20" height = "20" alt = "fb">
+            <a href="https://www.facebook.com/profile.php?id=100010662846893">FaceBook</a>
         </section>
         
         <script src="index.js"></script>

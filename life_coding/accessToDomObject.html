@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ol>
+<script>
+    var uls = document.getElementsByTagName('ul');
+    var lis = uls[0].getElementsByTagName('li');
+    for(var i=0; i < lis.length; i++){
+        lis[i].style.color='red' 
+        // lis[i].style.fontFamily = 'georgia';
+        // lis[i].style.fontFamily = 'times new roman';
+    }
+</script>
+</body>
+</html>
