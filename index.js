@@ -31,5 +31,13 @@ console.log(console)
 const title = document.getElementById("title");
 title.innerHTML = "Boo!"
 
-console.dir(title)
-console.log(document)
+let interactive_sentence = document.querySelector("#interactive_sentence")
+
+interactive_sentence.addEventListener("click",handleClick)
+
+function handleClick(event){
+    console.log("I have been clicked")
+}
+
+// const age = prompt("How old are you?")
+// console.log(age)

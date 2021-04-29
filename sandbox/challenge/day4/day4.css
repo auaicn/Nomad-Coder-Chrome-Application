@@ -1,0 +1,17 @@
+body {
+    background-color: orange;
+}
+
+h1 {
+    color:palegoldenrod;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn{
+    
+}
+
+.clicked{
+    color: #7f8c8d;
+}
+
